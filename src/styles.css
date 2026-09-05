@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --color-navy: #0b1c2c;
+  --color-navy-mid: #132536;
+  --color-navy-soft: #1b3348;
+  --color-ink: #152033;
+  --color-ink-muted: #5b6573;
+  --color-ink-subtle: #7a8492;
+  --color-paper: #f4f6f8;
+  --color-paper-2: #eef1f5;
+  --color-surface: #ffffff;
+  --color-line: #e2e7ee;
+  --color-line-strong: #cfd6e0;
+  --color-teal: #0f766e;
+  --color-teal-hover: #0d9488;
+  --color-teal-soft: #d9f3ef;
+  --color-teal-ink: #115e59;
+  --color-amber: #b45309;
+  --color-amber-soft: #fef3c7;
+  --color-danger: #b42318;
+  --color-danger-soft: #fee4e2;
+  --color-ok: #067647;
+  --color-ok-soft: #d1fadf;
+  --color-info: #175cd3;
+  --color-info-soft: #dbeafe;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --shadow-border:
+    0 0 0 1px rgb(21 32 51 / 0.06),
+    0 1px 2px -1px rgb(21 32 51 / 0.06),
+    0 2px 6px rgb(21 32 51 / 0.04);
+  --shadow-border-hover:
+    0 0 0 1px rgb(21 32 51 / 0.1),
+    0 1px 2px -1px rgb(21 32 51 / 0.08),
+    0 4px 10px rgb(21 32 51 / 0.06);
+  --shadow-panel: 0 12px 40px rgb(11 28 44 / 0.16);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  * {
+    border-color: var(--color-line);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

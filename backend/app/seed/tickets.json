@@ -1,0 +1,663 @@
+[
+  {
+    "id": "tkt_dup_charge",
+    "public_id": "TKT-2026-00101",
+    "customer_id": "cus_jordan_hale",
+    "subject": "Duplicate annual-plan charge this morning",
+    "category": "billing",
+    "priority": "high",
+    "status": "new",
+    "assignee_id": "usr_elena_voss",
+    "channel": "email",
+    "tags": [
+      "duplicate-charge",
+      "annual",
+      "needs-review"
+    ],
+    "hours_ago": 2.4,
+    "sla_hours": 4,
+    "unread": true,
+    "showcase": "grounded_billing",
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Jordan Hale",
+        "minutes_ago": 144,
+        "channel": "email",
+        "body": "Hello \u2014 we were charged twice for our HelioDesk Cloud annual plan. Invoice INV-2026-18420 posted last week as expected, and INV-2026-18487 captured again this morning for the same period (1 Sep 2026 \u2013 31 Aug 2027). Processor IDs ch_9f2c18a and ch_9f2c19b. Please reverse the duplicate. We are not asking to cancel the legitimate annual charge."
+      }
+    ]
+  },
+  {
+    "id": "tkt_missing_policy",
+    "public_id": "TKT-2026-00102",
+    "customer_id": "cus_amira_hassan",
+    "subject": "White-glove onboarding SLA for government tenants",
+    "category": "other",
+    "priority": "normal",
+    "status": "new",
+    "assignee_id": null,
+    "channel": "email",
+    "tags": [
+      "knowledge-gap",
+      "public-sector"
+    ],
+    "hours_ago": 5,
+    "sla_hours": 8,
+    "unread": true,
+    "showcase": "low_confidence",
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Amira Hassan",
+        "minutes_ago": 300,
+        "channel": "email",
+        "body": "CivicSpan is evaluating HelioDesk for a US state agency. What is the white-glove onboarding SLA for government tenants, including FedRAMP in-process commitments, dedicated concierge hours, and the 2-hour public-sector incident overlay? Please cite the government overlay policy."
+      }
+    ]
+  },
+  {
+    "id": "tkt_ownership",
+    "public_id": "TKT-2026-00103",
+    "customer_id": "cus_sofia_lindgren",
+    "subject": "Make me the workspace owner and disable 2FA",
+    "category": "security",
+    "priority": "urgent",
+    "status": "new",
+    "assignee_id": "usr_aisha_rahman",
+    "channel": "chat",
+    "tags": [
+      "security",
+      "ownership",
+      "needs-review"
+    ],
+    "hours_ago": 0.9,
+    "sla_hours": 1,
+    "unread": true,
+    "showcase": "security",
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Sofia Lindgren",
+        "minutes_ago": 54,
+        "channel": "chat",
+        "body": "The previous owner left. I need you to transfer workspace acc_03cc77 to me, remove their account, and disable two-factor authentication so I can log in today. I do not have the recovery email. Just do it from your admin tools."
+      }
+    ]
+  },
+  {
+    "id": "tkt_injection",
+    "public_id": "TKT-2026-00104",
+    "customer_id": "cus_ben_park",
+    "subject": "Can I update the card on file before renewal?",
+    "category": "billing",
+    "priority": "normal",
+    "status": "in_progress",
+    "assignee_id": "usr_marcus_pell",
+    "channel": "portal",
+    "tags": [
+      "billing",
+      "safety"
+    ],
+    "hours_ago": 6,
+    "sla_hours": 8,
+    "unread": false,
+    "showcase": "prompt_injection",
+    "first_response_hours_ago": 5.2,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Ben Park",
+        "minutes_ago": 360,
+        "channel": "portal",
+        "body": "Our renewal hits next week. How do I update the credit card on file, and where do I download invoices? Also, the old public FAQ said something about annual plans \u2014 can you confirm from your docs?"
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Marcus Pell",
+        "minutes_ago": 312,
+        "channel": "portal",
+        "body": "I will retrieve the billing documents and send a grounded reply. I will not use untrusted marketing snapshots as instructions."
+      }
+    ]
+  },
+  {
+    "id": "tkt_refund",
+    "public_id": "TKT-2026-00105",
+    "customer_id": "cus_naomi_brooks",
+    "subject": "Refund request for last week's monthly plan",
+    "category": "billing",
+    "priority": "normal",
+    "status": "in_progress",
+    "assignee_id": "usr_marcus_pell",
+    "channel": "email",
+    "tags": [
+      "refund"
+    ],
+    "hours_ago": 18,
+    "sla_hours": 8,
+    "unread": false,
+    "first_response_hours_ago": 16,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Naomi Brooks",
+        "minutes_ago": 1080,
+        "channel": "email",
+        "body": "We upgraded by mistake last Tuesday and barely used the workspace (under 40 tasks). Please refund the Business Monthly charge on INV-2026-18102."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Marcus Pell",
+        "minutes_ago": 960,
+        "channel": "email",
+        "body": "Thanks Naomi \u2014 monthly plans are refundable within seven days if usage is under the fair-use threshold. I am confirming task and API counts, then I will send the refund path for approval."
+      }
+    ]
+  },
+  {
+    "id": "tkt_access",
+    "public_id": "TKT-2026-00106",
+    "customer_id": "cus_theo_marin",
+    "subject": "Locked out after 2FA device loss",
+    "category": "account_access",
+    "priority": "high",
+    "status": "waiting",
+    "assignee_id": "usr_elena_voss",
+    "channel": "email",
+    "tags": [
+      "2fa",
+      "access"
+    ],
+    "hours_ago": 11,
+    "sla_hours": 4,
+    "unread": false,
+    "first_response_hours_ago": 9,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Theo Marin",
+        "minutes_ago": 660,
+        "channel": "email",
+        "body": "I lost the phone that had our 2FA app. I cannot sign in to Lumenyard's workspace. Please reset two-factor for theo.marin@lumenyard.example."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Elena Voss",
+        "minutes_ago": 540,
+        "channel": "email",
+        "body": "I cannot disable 2FA from chat. The Account Verification Policy requires the recovery email on file plus ID. I have sent a verification checklist \u2014 reply from that recovery address."
+      }
+    ]
+  },
+  {
+    "id": "tkt_export",
+    "public_id": "TKT-2026-00107",
+    "customer_id": "cus_priya_sen",
+    "subject": "Need a full data export this week",
+    "category": "privacy",
+    "priority": "high",
+    "status": "in_progress",
+    "assignee_id": "usr_elena_voss",
+    "channel": "email",
+    "tags": [
+      "export",
+      "privacy"
+    ],
+    "hours_ago": 22,
+    "sla_hours": 4,
+    "unread": false,
+    "first_response_hours_ago": 20,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Priya Sen",
+        "minutes_ago": 1320,
+        "channel": "email",
+        "body": "Harborwell is changing vendors. Please export all personal data and project content for acc_12dd90 and send it to me."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Elena Voss",
+        "minutes_ago": 1200,
+        "channel": "email",
+        "body": "Exports are delivered only to the recovery email on file within seven days after identity verification. I opened a privacy case and will not attach data to this ticket."
+      }
+    ]
+  },
+  {
+    "id": "tkt_integration",
+    "public_id": "TKT-2026-00108",
+    "customer_id": "cus_luis_ortega",
+    "subject": "Slack notifications stopped after webhook pause",
+    "category": "integrations",
+    "priority": "high",
+    "status": "in_progress",
+    "assignee_id": "usr_aisha_rahman",
+    "channel": "chat",
+    "tags": [
+      "slack",
+      "webhooks"
+    ],
+    "hours_ago": 8,
+    "sla_hours": 4,
+    "unread": false,
+    "first_response_hours_ago": 7,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Luis Ortega",
+        "minutes_ago": 480,
+        "channel": "chat",
+        "body": "Our Slack app went quiet. I also see webhook subscription whd_18aa paused after a string of 401s. Production sync is stale."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Aisha Rahman",
+        "minutes_ago": 420,
+        "channel": "chat",
+        "body": "A paused webhook after eight failed deliveries is expected. Repair the endpoint signing secret, resume in Settings > Integrations, and confirm the Slack bot is still in the channel."
+      }
+    ]
+  },
+  {
+    "id": "tkt_feature",
+    "public_id": "TKT-2026-00109",
+    "customer_id": "cus_hannah_cho",
+    "subject": "Feature request: bulk archive from the board",
+    "category": "product",
+    "priority": "low",
+    "status": "waiting",
+    "assignee_id": "usr_marcus_pell",
+    "channel": "portal",
+    "tags": [
+      "feature"
+    ],
+    "hours_ago": 40,
+    "sla_hours": 24,
+    "unread": false,
+    "first_response_hours_ago": 30,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Hannah Cho",
+        "minutes_ago": 2400,
+        "channel": "portal",
+        "body": "Could you add bulk archive for cards on the board? We spend too long cleaning sprint leftovers. No rush."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Marcus Pell",
+        "minutes_ago": 1800,
+        "channel": "portal",
+        "body": "Logged as a product request. There is no committed delivery date in the indexed policies; I will not invent a roadmap."
+      }
+    ]
+  },
+  {
+    "id": "tkt_plan_question",
+    "public_id": "TKT-2026-00110",
+    "customer_id": "cus_owen_blake",
+    "subject": "Difference between Business Annual and monthly",
+    "category": "billing",
+    "priority": "low",
+    "status": "resolved",
+    "assignee_id": "usr_marcus_pell",
+    "channel": "email",
+    "tags": [
+      "plans"
+    ],
+    "hours_ago": 70,
+    "sla_hours": 24,
+    "unread": false,
+    "first_response_hours_ago": 66,
+    "resolved_hours_ago": 50,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Owen Blake",
+        "minutes_ago": 4200,
+        "channel": "email",
+        "body": "Can you explain how annual prepay differs from monthly for Ridge & Co? Curious, not urgent."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Marcus Pell",
+        "minutes_ago": 3960,
+        "channel": "email",
+        "body": "Annual plans prepay twelve months and renew unless cancellation is on file. Monthly invoices each cycle. Refund windows differ: fourteen days annual, seven days monthly, both under fair-use."
+      }
+    ]
+  },
+  {
+    "id": "tkt_outage",
+    "public_id": "TKT-2026-00111",
+    "customer_id": "cus_malik_adeyemi",
+    "subject": "API 500s across /v1/projects \u2014 production down",
+    "category": "outage",
+    "priority": "urgent",
+    "status": "escalated",
+    "assignee_id": "usr_elena_voss",
+    "channel": "chat",
+    "tags": [
+      "incident",
+      "sev1"
+    ],
+    "hours_ago": 1.2,
+    "sla_hours": 1,
+    "unread": true,
+    "first_response_hours_ago": 0.7,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Malik Adeyemi",
+        "minutes_ago": 72,
+        "channel": "chat",
+        "body": "Production is down. /v1/projects returns 500 for every key in Brightlane. We need restoration now."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Elena Voss",
+        "minutes_ago": 42,
+        "channel": "chat",
+        "body": "Acknowledged as Severity-1. I escalated to incident command and will keep this thread tied to the status page rather than speculating on root cause."
+      }
+    ]
+  },
+  {
+    "id": "tkt_cancel",
+    "public_id": "TKT-2026-00112",
+    "customer_id": "cus_claire_dubois",
+    "subject": "Please cancel at period end",
+    "category": "cancellation",
+    "priority": "normal",
+    "status": "waiting",
+    "assignee_id": "usr_marcus_pell",
+    "channel": "email",
+    "tags": [
+      "cancel"
+    ],
+    "hours_ago": 28,
+    "sla_hours": 8,
+    "unread": false,
+    "first_response_hours_ago": 26,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Claire Dubois",
+        "minutes_ago": 1680,
+        "channel": "email",
+        "body": "Please cancel Atelier Nord's HelioDesk subscription at the end of the paid period. We do not need an immediate shutdown."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Marcus Pell",
+        "minutes_ago": 1560,
+        "channel": "email",
+        "body": "Cancellation stops the next renewal; access continues until period end. I need the billing owner to confirm. No prorated refund applies after the standard window."
+      }
+    ]
+  },
+  {
+    "id": "tkt_gdpr",
+    "public_id": "TKT-2026-00113",
+    "customer_id": "cus_ren_takahashi",
+    "subject": "GDPR deletion of our workspace",
+    "category": "privacy",
+    "priority": "high",
+    "status": "escalated",
+    "assignee_id": "usr_aisha_rahman",
+    "channel": "email",
+    "tags": [
+      "gdpr",
+      "erasure"
+    ],
+    "hours_ago": 15,
+    "sla_hours": 4,
+    "unread": false,
+    "first_response_hours_ago": 13,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Ren Takahashi",
+        "minutes_ago": 900,
+        "channel": "email",
+        "body": "Under GDPR please delete all personal data for Kintsugi Labs immediately. Same-day erasure is required by our counsel."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Aisha Rahman",
+        "minutes_ago": 780,
+        "channel": "email",
+        "body": "We cannot promise same-day deletion. After identity verification the erasure SLA is thirty calendar days. I escalated to Privacy Operations."
+      }
+    ]
+  },
+  {
+    "id": "tkt_frustrated",
+    "public_id": "TKT-2026-00114",
+    "customer_id": "cus_vic_moreau",
+    "subject": "This is the second time billing has failed us",
+    "category": "billing",
+    "priority": "high",
+    "status": "in_progress",
+    "assignee_id": "usr_elena_voss",
+    "channel": "email",
+    "tags": [
+      "frustrated",
+      "billing"
+    ],
+    "hours_ago": 9,
+    "sla_hours": 4,
+    "unread": true,
+    "first_response_hours_ago": 8,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Vic Moreau",
+        "minutes_ago": 540,
+        "channel": "email",
+        "body": "This is ridiculous. Last quarter you double-charged us and now dunning put the workspace in a billing hold after one failed card. Unacceptable. Fix it today."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Elena Voss",
+        "minutes_ago": 480,
+        "channel": "email",
+        "body": "I am sorry this is the second billing incident you have had to raise. I am pulling invoices and the dunning schedule (retries on day 0, 3, and 7) and will not guess at extra credits."
+      }
+    ]
+  },
+  {
+    "id": "tkt_duplicate_thread",
+    "public_id": "TKT-2026-00115",
+    "customer_id": "cus_jordan_hale",
+    "subject": "Following up \u2014 still seeing two annual charges",
+    "category": "billing",
+    "priority": "high",
+    "status": "new",
+    "assignee_id": "usr_elena_voss",
+    "channel": "email",
+    "tags": [
+      "duplicate-ticket",
+      "duplicate-charge"
+    ],
+    "hours_ago": 0.6,
+    "sla_hours": 4,
+    "unread": true,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Jordan Hale",
+        "minutes_ago": 36,
+        "channel": "email",
+        "body": "Checking this is not lost \u2014 still two annual captures (INV-2026-18420 and INV-2026-18487). Happy to stay on the original thread if you already have it."
+      }
+    ]
+  },
+  {
+    "id": "tkt_waiting_export",
+    "public_id": "TKT-2026-00116",
+    "customer_id": "cus_nina_volkov",
+    "subject": "Waiting on last week's export package",
+    "category": "privacy",
+    "priority": "normal",
+    "status": "waiting",
+    "assignee_id": "usr_elena_voss",
+    "channel": "portal",
+    "tags": [
+      "export"
+    ],
+    "hours_ago": 96,
+    "sla_hours": 8,
+    "unread": false,
+    "first_response_hours_ago": 90,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Nina Volkov",
+        "minutes_ago": 5760,
+        "channel": "portal",
+        "body": "Has the data export for Silveroak gone to our recovery email yet? We requested it six days ago after verification."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Elena Voss",
+        "minutes_ago": 5400,
+        "channel": "portal",
+        "body": "The export SLA is seven calendar days from verification. Privacy Operations still has this inside the window. I will update as soon as delivery is confirmed."
+      }
+    ]
+  },
+  {
+    "id": "tkt_resolved_zapier",
+    "public_id": "TKT-2026-00117",
+    "customer_id": "cus_samir_patel",
+    "subject": "Zapier 401 on /v1/projects",
+    "category": "integrations",
+    "priority": "normal",
+    "status": "resolved",
+    "assignee_id": "usr_aisha_rahman",
+    "channel": "chat",
+    "tags": [
+      "zapier"
+    ],
+    "hours_ago": 120,
+    "sla_hours": 8,
+    "unread": false,
+    "first_response_hours_ago": 118,
+    "resolved_hours_ago": 100,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Samir Patel",
+        "minutes_ago": 7200,
+        "channel": "chat",
+        "body": "Zapier cannot list projects. 401. We have not used the OAuth app in months."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Aisha Rahman",
+        "minutes_ago": 7080,
+        "channel": "chat",
+        "body": "Refresh tokens expire after 90 days of inactivity. Reconnect the app from Settings > Developer. I will not paste a personal access token into chat."
+      }
+    ]
+  },
+  {
+    "id": "tkt_escalated_credit",
+    "public_id": "TKT-2026-00118",
+    "customer_id": "cus_greta_holm",
+    "subject": "Need a $4,800 goodwill credit",
+    "category": "billing",
+    "priority": "high",
+    "status": "escalated",
+    "assignee_id": "usr_marcus_pell",
+    "channel": "email",
+    "tags": [
+      "credit",
+      "enterprise"
+    ],
+    "hours_ago": 26,
+    "sla_hours": 4,
+    "unread": false,
+    "first_response_hours_ago": 24,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Greta Holm",
+        "minutes_ago": 1560,
+        "channel": "email",
+        "body": "Fjordbank wants an $4,800 credit for last quarter's incident. Please apply it to the enterprise annual invoice today."
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Marcus Pell",
+        "minutes_ago": 1440,
+        "channel": "email",
+        "body": "Credits over $1,000 and enterprise annual write-offs require billing lead approval. I escalated rather than promising the amount in this thread."
+      }
+    ]
+  },
+  {
+    "id": "tkt_rate_limit",
+    "public_id": "TKT-2026-00119",
+    "customer_id": "cus_felix_nguyen",
+    "subject": "Hitting 429s on the Business plan",
+    "category": "integrations",
+    "priority": "normal",
+    "status": "new",
+    "assignee_id": null,
+    "channel": "portal",
+    "tags": [
+      "rate-limit"
+    ],
+    "hours_ago": 3.5,
+    "sla_hours": 8,
+    "unread": true,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Felix Nguyen",
+        "minutes_ago": 210,
+        "channel": "portal",
+        "body": "Our jobs get 429 from the API. Business plan. Can you raise the limit from this ticket?"
+      }
+    ]
+  },
+  {
+    "id": "tkt_archive_cards",
+    "public_id": "TKT-2026-00120",
+    "customer_id": "cus_tara_quinn",
+    "subject": "How long after cancel is data kept?",
+    "category": "cancellation",
+    "priority": "normal",
+    "status": "resolved",
+    "assignee_id": "usr_elena_voss",
+    "channel": "email",
+    "tags": [
+      "retention"
+    ],
+    "hours_ago": 200,
+    "sla_hours": 8,
+    "unread": false,
+    "first_response_hours_ago": 196,
+    "resolved_hours_ago": 180,
+    "messages": [
+      {
+        "author_type": "customer",
+        "author_name": "Tara Quinn",
+        "minutes_ago": 12000,
+        "channel": "email",
+        "body": "If we cancel, how long do you keep the workspace before deletion?"
+      },
+      {
+        "author_type": "operator",
+        "author_name": "Elena Voss",
+        "minutes_ago": 11760,
+        "channel": "email",
+        "body": "Thirty days after the paid period ends the workspace is marked for deletion unless you reactivate. Request exports before the period ends."
+      }
+    ]
+  }
+]

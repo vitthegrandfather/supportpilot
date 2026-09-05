@@ -1,0 +1,97 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: supportpilot
+      POSTGRES_PASSWORD: supportpilot
+      POSTGRES_DB: supportpilot
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U supportpilot -d supportpilot"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - supportpilot_pg:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+asyncpg://supportpilot:supportpilot@db:5432/supportpilot
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      SECRET_KEY: docker-demo-not-a-production-secret
+      SUPPORTPILOT_DEMO_AUTO_LOGIN: "true"
+      EMBEDDING_PROVIDER: sandbox
+      GENERATION_PROVIDER: sandbox
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    command: >
+      sh -c "python -m alembic upgrade head &&
+             python -m app.seed &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000"
+
+  worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+asyncpg://supportpilot:supportpilot@db:5432/supportpilot
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      SECRET_KEY: docker-demo-not-a-production-secret
+      EMBEDDING_PROVIDER: sandbox
+      GENERATION_PROVIDER: sandbox
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      api:
+        condition: service_healthy
+    command: celery -A app.workers.celery_app worker --loglevel=info
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    environment:
+      VITE_AUTH_ENABLED: "false"
+    ports:
+      - "8080:8080"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8080/"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  supportpilot_pg:
