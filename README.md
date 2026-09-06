@@ -2,6 +2,8 @@
 
 SupportPilot is a **fictional** AI-assisted customer support workspace. It is a personal portfolio demonstration, not a production deployment for a real company.
 
+**[Open the interactive demo](https://supportpilot-rho.vercel.app)**
+
 Every customer, company, ticket, document, email address, and metric in the seeded dataset is invented. HelioDesk Cloud and HelioDesk Labs LLC do not exist. No real organization uses this product.
 
 Replies are **never** sent to a real inbox. “Send simulated reply” records an operator message in the demo workspace only.
